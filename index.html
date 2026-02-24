@@ -13,7 +13,19 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">SynthDome</div>
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="url(#logo-gradient)" stroke-width="2"/>
+                    <circle cx="16" cy="16" r="8" fill="url(#logo-gradient)"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#4facfe"/>
+                            <stop offset="100%" stop-color="#00f2fe"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>SynthDome</span>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#failure">Problem</a></li>
@@ -31,7 +43,12 @@
         <div class="hero-particles"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">몰입형 회복 환경의 새로운 패러다임</div>
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 1L10 6L15 6L11 10L13 15L8 12L3 15L5 10L1 6L6 6L8 1Z" fill="currentColor"/>
+                    </svg>
+                    몰입형 회복 환경의 새로운 패러다임
+                </div>
                 <h1 class="hero-title">SynthDome</h1>
                 <p class="hero-subtitle-ko">신스돔</p>
                 <h2 class="hero-tagline">환경이 만드는 진정한 회복</h2>
@@ -81,27 +98,71 @@
             </div>
             
             <div class="neurological-fact">
+                <svg class="neuro-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM24 40C15.18 40 8 32.82 8 24C8 15.18 15.18 8 24 8C32.82 8 40 15.18 40 24C40 32.82 32.82 40 24 40Z" fill="url(#brain-gradient)"/>
+                    <circle cx="24" cy="24" r="8" fill="url(#brain-gradient)"/>
+                    <defs>
+                        <linearGradient id="brain-gradient" x1="0" y1="0" x2="48" y2="48">
+                            <stop offset="0%" stop-color="#8b5cf6"/>
+                            <stop offset="100%" stop-color="#a78bfa"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
                 <h3>Neurological Fact</h3>
                 <p>인간의 뇌는 '안전한 환경'으로 인식하지 않으면 회복 메커니즘이 작동하지 않습니다.</p>
             </div>
 
             <div class="failure-grid">
                 <div class="failure-card">
-                    <div class="failure-icon control-failed"></div>
+                    <div class="failure-icon-wrapper">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="16" fill="url(#control-gradient)"/>
+                            <path d="M32 20C25.4 20 20 25.4 20 32C20 38.6 25.4 44 32 44C38.6 44 44 38.6 44 32C44 25.4 38.6 20 32 20ZM32 40C27.6 40 24 36.4 24 32C24 27.6 27.6 24 32 24C36.4 24 40 27.6 40 32C40 36.4 36.4 40 32 40Z" fill="white"/>
+                            <circle cx="32" cy="32" r="4" fill="white"/>
+                            <defs>
+                                <linearGradient id="control-gradient" x1="0" y1="0" x2="64" y2="64">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>Control Failed</h3>
                     <h4>모바일 앱 & 웨어러블</h4>
                     <p>주변 소음과 빛 등 외부 환경 통제 불가. 사용자가 스스로 집중해야 하므로 지속적 효과 미비.</p>
                 </div>
                 
                 <div class="failure-card">
-                    <div class="failure-icon access-failed"></div>
+                    <div class="failure-icon-wrapper">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="16" fill="url(#access-gradient)"/>
+                            <path d="M32 18C24.27 18 18 24.27 18 32C18 39.73 24.27 46 32 46C39.73 46 46 39.73 46 32C46 24.27 39.73 18 32 18ZM32 42C26.49 42 22 37.51 22 32C22 26.49 26.49 22 32 22C37.51 22 42 26.49 42 32C42 37.51 37.51 42 32 42ZM28 32L35 28V36L28 32Z" fill="white"/>
+                            <defs>
+                                <linearGradient id="access-gradient" x1="0" y1="0" x2="64" y2="64">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>Access Failed</h3>
                     <h4>약물 & 심리 상담</h4>
                     <p>부작용 우려 및 높은 비용. 일상적 회복(Daily Recovery) 수단으로 활용 한계.</p>
                 </div>
                 
                 <div class="failure-card">
-                    <div class="failure-icon effect-failed"></div>
+                    <div class="failure-icon-wrapper">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="16" fill="url(#effect-gradient)"/>
+                            <path d="M32 44C38.63 44 44 38.63 44 32C44 25.37 38.63 20 32 20C25.37 20 20 25.37 20 32C20 38.63 25.37 44 32 44ZM28 28H36V36H28V28Z" fill="white"/>
+                            <defs>
+                                <linearGradient id="effect-gradient" x1="0" y1="0" x2="64" y2="64">
+                                    <stop offset="0%" stop-color="#4facfe"/>
+                                    <stop offset="100%" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>Effect Failed</h3>
                     <h4>단순 명상 콘텐츠</h4>
                     <p>뇌가 '불안전하다'고 느끼는 공간에서는 효과 반감. 안정감은 콘텐츠가 아닌 환경에서 발생.</p>
@@ -120,20 +181,26 @@
 
             <div class="stats-grid">
                 <div class="stat-card">
+                    <div class="stat-icon">📊</div>
                     <div class="stat-number">74%</div>
                     <div class="stat-label">만성 스트레스 인구 비율</div>
                 </div>
                 <div class="stat-card">
+                    <div class="stat-icon">😴</div>
                     <div class="stat-number">68%</div>
                     <div class="stat-label">수면 장애 유병률</div>
                 </div>
                 <div class="stat-card">
+                    <div class="stat-icon">🌍</div>
                     <div class="stat-number">83%</div>
                     <div class="stat-label">환경 요인 영향</div>
                 </div>
             </div>
 
             <div class="quote-box">
+                <svg class="quote-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 28C12 24.7 14.7 22 18 22H20V18C20 14.7 17.3 12 14 12H12V8H14C19.5 8 24 12.5 24 18V28C24 31.3 21.3 34 18 34H12V28ZM28 28C28 24.7 30.7 22 34 22H36V18C36 14.7 33.3 12 30 12H28V8H30C35.5 8 40 12.5 40 18V28C40 31.3 37.3 34 34 34H28V28Z" fill="currentColor" opacity="0.2"/>
+                </svg>
                 <p>"스트레스와 수면 문제는 개인의 의지 부족이 아니라 환경 통제의 실패입니다."</p>
                 <span>- Neuro-Architecture Research</span>
             </div>
@@ -150,24 +217,28 @@
 
             <div class="market-grid">
                 <div class="market-card">
+                    <div class="market-icon">🏢</div>
                     <h3>Corporate Wellness</h3>
                     <p class="market-value">$87.4B</p>
                     <p class="market-cagr">CAGR 12.8%</p>
                     <p class="market-desc">기업 스트레스 관리 및 생산성 향상</p>
                 </div>
                 <div class="market-card">
+                    <div class="market-icon">🏨</div>
                     <h3>Premium Hospitality</h3>
                     <p class="market-value">$154B</p>
                     <p class="market-cagr">CAGR 15.2%</p>
                     <p class="market-desc">호텔, 리조트 웰니스 체험 경제</p>
                 </div>
                 <div class="market-card">
+                    <div class="market-icon">🏥</div>
                     <h3>Medical Facility</h3>
                     <p class="market-value">$62B</p>
                     <p class="market-cagr">CAGR 9.4%</p>
                     <p class="market-desc">병원, 클리닉 비약물 치료 솔루션</p>
                 </div>
                 <div class="market-card">
+                    <div class="market-icon">💪</div>
                     <h3>Fitness & Spa</h3>
                     <p class="market-value">$119B</p>
                     <p class="market-cagr">CAGR 11.6%</p>
@@ -187,16 +258,59 @@
 
             <div class="solution-features">
                 <div class="solution-hero">
-                    <div class="solution-icon-large acoustic"></div>
+                    <div class="solution-visual">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="60" r="50" fill="url(#acoustic-gradient)"/>
+                            <path d="M45 45C45 36.72 51.72 30 60 30C68.28 30 75 36.72 75 45V75C75 83.28 68.28 90 60 90C51.72 90 45 83.28 45 75V45Z" fill="white" opacity="0.3"/>
+                            <circle cx="60" cy="45" r="8" fill="white"/>
+                            <circle cx="60" cy="75" r="8" fill="white"/>
+                            <defs>
+                                <linearGradient id="acoustic-gradient" x1="0" y1="0" x2="120" y2="120">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>Acoustic Dome</h3>
+                    <p>음향 차단 구조</p>
                 </div>
                 <div class="solution-hero">
-                    <div class="solution-icon-large recline"></div>
+                    <div class="solution-visual">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="30" width="100" height="60" rx="10" fill="url(#recline-gradient)"/>
+                            <path d="M30 50L50 60L30 70V50Z" fill="white"/>
+                            <circle cx="80" cy="60" r="15" fill="white" opacity="0.3"/>
+                            <text x="80" y="67" font-size="16" fill="white" text-anchor="middle" font-weight="bold">45°</text>
+                            <defs>
+                                <linearGradient id="recline-gradient" x1="0" y1="0" x2="120" y2="120">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>45° Recline</h3>
+                    <p>최적 각도 설계</p>
                 </div>
                 <div class="solution-hero">
-                    <div class="solution-icon-large immersion"></div>
+                    <div class="solution-visual">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="30" width="80" height="60" rx="8" fill="url(#immersion-gradient)"/>
+                            <circle cx="35" cy="45" r="5" fill="white" opacity="0.5"/>
+                            <circle cx="60" cy="45" r="5" fill="white" opacity="0.8"/>
+                            <circle cx="85" cy="45" r="5" fill="white"/>
+                            <path d="M30 60H90M30 70H90M30 80H90" stroke="white" stroke-width="2" opacity="0.3"/>
+                            <defs>
+                                <linearGradient id="immersion-gradient" x1="0" y1="0" x2="120" y2="120">
+                                    <stop offset="0%" stop-color="#4facfe"/>
+                                    <stop offset="100%" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>Immersion Screen</h3>
+                    <p>몰입형 시각 시스템</p>
                 </div>
             </div>
 
@@ -204,14 +318,17 @@
 
             <div class="solution-details">
                 <div class="detail-card">
+                    <div class="detail-number">01</div>
                     <h4>대형 돔(Dome) 구조의 물리적 차단</h4>
                     <p>시야, 소음, 빛 등 외부 자극을 물리적으로 99.9% 차단하여 뇌가 경계 태세를 해제할 수 있는 '안전 지대'를 형성합니다.</p>
                 </div>
                 <div class="detail-card">
+                    <div class="detail-number">02</div>
                     <h4>45도 리클라인 (Zero-Gravity)</h4>
                     <p>심장과 다리의 높이를 맞추고 척추 압력을 최소화하는 각도로, 각성도는 유지하되 신체 긴장은 즉각적으로 이완시킵니다.</p>
                 </div>
                 <div class="detail-card">
+                    <div class="detail-number">03</div>
                     <h4>감각 통합 몰입 설계</h4>
                     <p>단순 시각 자극이 아닌 소리, 빛, 공간 밀도를 통합 설계하여 웨어러블 기기로는 불가능한 '생리적 안정 환경'을 조성합니다.</p>
                 </div>
@@ -232,11 +349,27 @@
                     <h3>Field of View (FoV)</h3>
                     <div class="comparison-values">
                         <div class="value-winner">
+                            <div class="fov-visual winner">
+                                <svg width="120" height="80" viewBox="0 0 120 80" fill="none">
+                                    <path d="M10 40 Q60 10, 110 40 L110 70 Q60 60, 10 70 Z" fill="url(#fov-winner)" opacity="0.5"/>
+                                    <defs>
+                                        <linearGradient id="fov-winner">
+                                            <stop offset="0%" stop-color="#4facfe"/>
+                                            <stop offset="100%" stop-color="#00f2fe"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                             <span class="value-number">180°+</span>
                             <span class="value-label">Full Immersion</span>
                         </div>
                         <span class="vs">vs.</span>
                         <div class="value-standard">
+                            <div class="fov-visual standard">
+                                <svg width="80" height="60" viewBox="0 0 80 60" fill="none">
+                                    <path d="M15 30 Q40 15, 65 30 L65 50 Q40 45, 15 50 Z" fill="#666" opacity="0.3"/>
+                                </svg>
+                            </div>
                             <span class="value-number">~100°</span>
                             <span class="value-label">Standard VR/Wearable</span>
                         </div>
@@ -245,22 +378,35 @@
                 <div class="comparison-item">
                     <h3>Environmental Control</h3>
                     <div class="control-features">
-                        <span class="feature-badge">100% Light Blocking</span>
-                        <span class="feature-badge">Sound Dampening Shell</span>
+                        <span class="feature-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="8" fill="currentColor"/>
+                            </svg>
+                            100% Light Blocking
+                        </span>
+                        <span class="feature-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 4C6.7 4 4 6.7 4 10C4 13.3 6.7 16 10 16C13.3 16 16 13.3 16 10C16 6.7 13.3 4 10 4Z" fill="currentColor"/>
+                            </svg>
+                            Sound Dampening Shell
+                        </span>
                     </div>
                 </div>
             </div>
 
             <div class="large-scale-reasons">
                 <div class="reason-card">
+                    <div class="reason-icon">👁️</div>
                     <h4>시야각(FoV)과 공간 인지</h4>
                     <p>인간의 신경계는 공간의 크기와 깊이에 직접 반응합니다. 소형 기기의 좁은 시야각은 뇌가 '가상'임을 인지하게 하지만, 대형 돔은 시야를 완전히 장악하여 '실제'로 착각하게 만듭니다.</p>
                 </div>
                 <div class="reason-card">
+                    <div class="reason-icon">🛡️</div>
                     <h4>물리적 자극 차단</h4>
                     <p>웨어러블 기기는 주변 빛과 소음을 완벽히 차단하지 못합니다. 신스돔은 물리적 쉘(Shell) 구조로 외부 자극을 원천 봉쇄하여 뇌의 경계 모드를 해제합니다.</p>
                 </div>
                 <div class="reason-card">
+                    <div class="reason-icon">🧠</div>
                     <h4>안전 신호(Safety Signal)</h4>
                     <p>안정적인 대형 구조물 안에 위치할 때, 뇌는 본능적으로 보호받는다고 느낍니다. 이는 콘텐츠만으로는 줄 수 없는 원초적인 심리적 안정감을 제공합니다.</p>
                 </div>
@@ -283,6 +429,19 @@
             <div class="tech-grid">
                 <div class="tech-card">
                     <div class="tech-number">01</div>
+                    <div class="tech-icon-large">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="35" stroke="url(#tech1)" stroke-width="3" opacity="0.3"/>
+                            <circle cx="40" cy="40" r="25" fill="url(#tech1)" opacity="0.2"/>
+                            <path d="M30 40H50M40 30V50" stroke="url(#tech1)" stroke-width="4"/>
+                            <defs>
+                                <linearGradient id="tech1">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>물리적 안정 환경</h3>
                     <p>외부 소음과 빛을 구조적으로 차단하여 신경계가 경계 태세를 해제하는 '무자극 환경'을 조성합니다.</p>
                     <div class="tech-specs">
@@ -299,6 +458,20 @@
 
                 <div class="tech-card">
                     <div class="tech-number">02</div>
+                    <div class="tech-icon-large">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect x="15" y="25" width="50" height="30" rx="5" fill="url(#tech2)" opacity="0.3"/>
+                            <path d="M20 40L35 47L20 54V40Z" fill="url(#tech2)"/>
+                            <circle cx="55" cy="40" r="10" fill="url(#tech2)" opacity="0.5"/>
+                            <text x="55" y="45" font-size="12" fill="currentColor" text-anchor="middle" font-weight="bold">45°</text>
+                            <defs>
+                                <linearGradient id="tech2">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>45도 리클라인</h3>
                     <p>뇌파가 안정되면서도 의식을 잃지 않는 최적의 각도(Zero-Gravity)로 이완과 각성의 균형을 유도합니다.</p>
                     <div class="tech-specs">
@@ -315,6 +488,21 @@
 
                 <div class="tech-card">
                     <div class="tech-number">03</div>
+                    <div class="tech-icon-large">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect x="15" y="20" width="50" height="40" rx="5" fill="url(#tech3)" opacity="0.3"/>
+                            <circle cx="25" cy="30" r="3" fill="url(#tech3)"/>
+                            <circle cx="40" cy="30" r="3" fill="url(#tech3)" opacity="0.7"/>
+                            <circle cx="55" cy="30" r="3" fill="url(#tech3)" opacity="0.4"/>
+                            <path d="M20 45H60M20 50H60M20 55H60" stroke="url(#tech3)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="tech3">
+                                    <stop offset="0%" stop-color="#4facfe"/>
+                                    <stop offset="100%" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>시야 몰입 구조</h3>
                     <p>정면 스크린과 주변 차폐 설계를 결합하여 시야 분산을 원천 제거, 가상 환경을 실재로 인식하게 합니다.</p>
                     <div class="tech-specs">
@@ -343,37 +531,97 @@
             <div class="flow-container">
                 <div class="flow-step">
                     <div class="step-number">STEP 01</div>
-                    <div class="step-icon measure"></div>
+                    <div class="step-visual">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="30" fill="url(#step1)" opacity="0.2"/>
+                            <path d="M40 20C28.95 20 20 28.95 20 40C20 51.05 28.95 60 40 60C51.05 60 60 51.05 60 40C60 28.95 51.05 20 40 20ZM40 55C31.72 55 25 48.28 25 40C25 31.72 31.72 25 40 25C48.28 25 55 31.72 55 40C55 48.28 48.28 55 40 55Z" fill="url(#step1)"/>
+                            <circle cx="40" cy="40" r="8" fill="url(#step1)"/>
+                            <defs>
+                                <linearGradient id="step1">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>측정 (Measure)</h3>
                     <p>HRV(심박변이도), 호흡수, 감정상태 등 사용자의 생리적 스트레스 지표를 정밀 센서로 실시간 감지합니다.</p>
                     <div class="step-badge">Input: Bio-Signal</div>
                 </div>
 
-                <div class="flow-arrow">→</div>
+                <div class="flow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M10 20H30M30 20L22 12M30 20L22 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
 
                 <div class="flow-step">
                     <div class="step-number">STEP 02</div>
-                    <div class="step-icon intervention"></div>
+                    <div class="step-visual">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="30" fill="url(#step2)" opacity="0.2"/>
+                            <path d="M30 35L45 40L30 45V35Z" fill="url(#step2)"/>
+                            <circle cx="50" cy="40" r="12" stroke="url(#step2)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="step2">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>개입 (Intervention)</h3>
                     <p>실시간 데이터에 반응하여 조명, 사운드, 진동 주파수를 동적으로 조절하는 적응형 프로토콜을 실행합니다.</p>
                     <div class="step-badge">Action: Adaptive Logic</div>
                 </div>
 
-                <div class="flow-arrow">→</div>
+                <div class="flow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M10 20H30M30 20L22 12M30 20L22 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
 
                 <div class="flow-step">
                     <div class="step-number">STEP 03</div>
-                    <div class="step-icon restoration"></div>
+                    <div class="step-visual">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="30" fill="url(#step3)" opacity="0.2"/>
+                            <path d="M25 40C25 31.72 31.72 25 40 25C48.28 25 55 31.72 55 40C55 48.28 48.28 55 40 55C31.72 55 25 48.28 25 40Z" stroke="url(#step3)" stroke-width="3"/>
+                            <path d="M35 40L38 43L45 36" stroke="url(#step3)" stroke-width="3" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="step3">
+                                    <stop offset="0%" stop-color="#4facfe"/>
+                                    <stop offset="100%" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>회복 (Restoration)</h3>
                     <p>부교감 신경 활성화를 유도하여 뇌파(Alpha/Theta) 안정화 및 심박 동기화를 달성합니다.</p>
                     <div class="step-badge">State: Deep Relax</div>
                 </div>
 
-                <div class="flow-arrow">→</div>
+                <div class="flow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M10 20H30M30 20L22 12M30 20L22 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
 
                 <div class="flow-step">
                     <div class="step-number">STEP 04</div>
-                    <div class="step-icon verification"></div>
+                    <div class="step-visual">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="30" fill="url(#step4)" opacity="0.2"/>
+                            <rect x="25" y="28" width="30" height="24" rx="2" stroke="url(#step4)" stroke-width="2"/>
+                            <path d="M30 36H50M30 40H50M30 44H45" stroke="url(#step4)" stroke-width="1.5"/>
+                            <defs>
+                                <linearGradient id="step4">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                     <h3>검증 (Verification)</h3>
                     <p>세션 종료 즉시 사용 전후의 생체 데이터 변화를 시각화하여 회복 효과를 정량적으로 증명합니다.</p>
                     <div class="step-badge">Result: Data Report</div>
@@ -382,11 +630,13 @@
 
             <div class="data-visualization">
                 <div class="viz-card">
+                    <div class="viz-icon">📈</div>
                     <h4>Adaptive Intervention Logic</h4>
                     <p>사용자의 스트레스 피크(Peak) 감지 시, 자극 강도를 자동으로 조절하여 안정화를 유도하는 알고리즘 시각화</p>
                     <span class="badge-active">Algorithm Active</span>
                 </div>
                 <div class="viz-card">
+                    <div class="viz-icon">💚</div>
                     <h4>Physiological Recovery Data</h4>
                     <p>세션 진행에 따른 교감신경(Stress) 저하와 심박변이도(HRV) 회복의 상관관계</p>
                     <span class="badge-verified">Clinical Verified</span>
@@ -406,24 +656,44 @@
             <div class="diff-grid">
                 <div class="diff-card">
                     <div class="diff-number">01</div>
+                    <div class="diff-icon">🎯</div>
                     <h3>All-in-One 다중 모드 플랫폼</h3>
                     <p>단일 목적의 명상 앱이나 수면 기기와 달리, 신스돔은 사이키델릭 시각 경험, 깊은 이완, 수면 유도 등 5가지 핵심 웰니스 영역을 하나의 장치로 커버합니다.</p>
                     <div class="mode-badges">
-                        <span class="mode-badge">Visual</span>
-                        <span class="mode-badge">Haptic</span>
-                        <span class="mode-badge">Audio</span>
+                        <span class="mode-badge">👁️ Visual</span>
+                        <span class="mode-badge">🤲 Haptic</span>
+                        <span class="mode-badge">🎵 Audio</span>
                     </div>
                 </div>
 
                 <div class="diff-card highlighted">
                     <div class="diff-number">02</div>
+                    <div class="diff-icon">⚡</div>
                     <h3>스트레스 지수 개선 압도적 회복 효과</h3>
                     <p>기존 명상 앱 대비 3.5배 높은 스트레스 지수 개선 효과(심박변이도 측정)를 임상으로 확인했습니다. 사용자는 모호한 기분이 아닌 확실한 수치 변화를 경험합니다.</p>
                     <div class="metrics">
                         <div class="metric-item">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 8L24 16L32 17L26 23L28 32L20 27L12 32L14 23L8 17L16 16L20 8Z" fill="url(#metric-up)"/>
+                                <defs>
+                                    <linearGradient id="metric-up">
+                                        <stop offset="0%" stop-color="#4facfe"/>
+                                        <stop offset="100%" stop-color="#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                             <span class="metric-value">HRV +45%</span>
                         </div>
                         <div class="metric-item">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 8L24 16L32 17L26 23L28 32L20 27L12 32L14 23L8 17L16 16L20 8Z" fill="url(#metric-down)"/>
+                                <defs>
+                                    <linearGradient id="metric-down">
+                                        <stop offset="0%" stop-color="#f093fb"/>
+                                        <stop offset="100%" stop-color="#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                             <span class="metric-value">Stress -32%</span>
                         </div>
                     </div>
@@ -431,11 +701,12 @@
 
                 <div class="diff-card">
                     <div class="diff-number">03</div>
+                    <div class="diff-icon">🔒</div>
                     <h3>기술적 진입장벽 복제 불가능한 구조</h3>
                     <p>대형 돔 구조, 4D 햅틱, 통합 제어 OS의 결합은 단순 소프트웨어나 웨어러블이 모방할 수 없는 물리적/기술적 강점을 구축합니다.</p>
                     <div class="tech-badges">
-                        <span class="tech-badge">Hardware IP</span>
-                        <span class="tech-badge">Integrated OS</span>
+                        <span class="tech-badge">🛠️ Hardware IP</span>
+                        <span class="tech-badge">💻 Integrated OS</span>
                     </div>
                 </div>
             </div>
@@ -451,23 +722,37 @@
             </div>
 
             <div class="partnership-intro">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="28" stroke="url(#contact-gradient)" stroke-width="3" opacity="0.3"/>
+                    <circle cx="32" cy="32" r="18" fill="url(#contact-gradient)" opacity="0.2"/>
+                    <path d="M32 16L38 28H26L32 16ZM32 48L26 36H38L32 48Z" fill="url(#contact-gradient)"/>
+                    <defs>
+                        <linearGradient id="contact-gradient">
+                            <stop offset="0%" stop-color="#4facfe"/>
+                            <stop offset="100%" stop-color="#00f2fe"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
                 <p>신스돔은 단순한 기기가 아닌 공간의 가치를 높이는 솔루션입니다.</p>
                 <p>PoC, 파일럿 프로그램, 공간 도입 등 다양한 협업을 제안해 주십시오.</p>
             </div>
 
             <div class="contact-grid">
                 <div class="contact-card">
+                    <div class="contact-icon">📞</div>
                     <h3>Contact Info</h3>
                     <p class="contact-detail">+82 10-8496-1440</p>
                     <p class="contact-detail">+82)10-4224-2020</p>
                 </div>
                 
                 <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
                     <h3>Email</h3>
                     <p class="contact-detail">synthdome.ceo@gmail.com</p>
                 </div>
                 
                 <div class="contact-card">
+                    <div class="contact-icon">📍</div>
                     <h3>Headquarters</h3>
                     <p class="contact-detail">서울시 성동구 성수1동</p>
                     <p class="contact-detail">태성빌딩</p>
@@ -475,6 +760,10 @@
             </div>
 
             <div class="resources">
+                <svg class="resources-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <rect x="12" y="8" width="24" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M18 16H30M18 22H30M18 28H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
                 <h3>기술 백서 및 데이터 리포트 요청</h3>
                 <p>임상 데이터 사례, 설치 가이드, 안전 규격 인증서 제공</p>
             </div>
@@ -485,6 +774,19 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <div class="footer-brand">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="url(#footer-gradient)" stroke-width="2"/>
+                        <circle cx="16" cy="16" r="8" fill="url(#footer-gradient)"/>
+                        <defs>
+                            <linearGradient id="footer-gradient" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#4facfe"/>
+                                <stop offset="100%" stop-color="#00f2fe"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>SynthDome</span>
+                </div>
                 <p>Copyright © 2026 SynthDome Inc. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
